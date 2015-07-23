@@ -1,72 +1,136 @@
 // Morris.js Charts sample data for SB Admin template
 
-$(function() {
+$(function () {
 
-    // Area Chart
-    Morris.Area({
-        element: 'morris-area-chart',
-        data: [{
-            period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
-        }, {
-            period: '2010 Q2',
-            iphone: 2778,
-            ipad: 2294,
-            itouch: 2441
-        }, {
-            period: '2010 Q3',
-            iphone: 4912,
-            ipad: 1969,
-            itouch: 2501
-        }, {
-            period: '2010 Q4',
-            iphone: 3767,
-            ipad: 3597,
-            itouch: 5689
-        }, {
-            period: '2011 Q1',
-            iphone: 6810,
-            ipad: 1914,
-            itouch: 2293
-        }, {
-            period: '2011 Q2',
-            iphone: 5670,
-            ipad: 4293,
-            itouch: 1881
-        }, {
-            period: '2011 Q3',
-            iphone: 4820,
-            ipad: 3795,
-            itouch: 1588
-        }, {
-            period: '2011 Q4',
-            iphone: 15073,
-            ipad: 5967,
-            itouch: 5175
-        }, {
-            period: '2012 Q1',
-            iphone: 10687,
-            ipad: 4460,
-            itouch: 2028
-        }, {
-            period: '2012 Q2',
-            iphone: 8432,
-            ipad: 5713,
-            itouch: 1791
-        }],
-        xkey: 'period',
-        ykeys: ['iphone', 'ipad', 'itouch'],
-        labels: ['iPhone', 'iPad', 'iPod Touch'],
+    //Morris.Bar({
+    //    element: 'morris-bar-workitems',
+    //    data: [
+    //        { y: 'Person A', a: 10 },
+    //        { y: 'Person B', a: 15 },
+    //        { y: 'Person C', a: 12 },
+    //        { y: 'Person D', a: 20 }],
+    //    xkey: 'y',
+    //    ykeys: ['a'],
+    //    labels: ['Calls'],
+    //    hideHover: 'always',
+    //    barColors: function (row, series, type) {
+    //        console.log("--> " + row.label, series, type);
+    //        if (row.label == "Person A") return "#AD1D28";
+    //        else if (row.label == "Person B") return "#DEBB27";
+    //        else if (row.label == "Person C") return "#fec04c";
+    //        else if (row.label == "Person D") return "#1AB244";
+    //    }
+    //});
+
+
+    // Bar Chart
+    Morris.Bar({
+        element: 'morris-bar-workitems',
+        data: [
+          { y: 'UC', a: 7991, b: 2222, c: 3333, d: 1654 },
+          { y: 'UC-AL', a: 7672, b: 3333, c: 1234, d: 4444 },
+          { y: 'IDI', a: 6676, b: 2222, c: 4232, d: 7855 },
+          { y: 'UC-AS', a: 4716, b: 3333, c: 1765, d: 1577 },
+          { y: 'AccSer', a: 4095, b: 2222, c: 3900, d: 6658 },
+          { y: 'Renew', a: 3320, b: 1876, c: 3333, d: 1244 },
+          { y: 'EOI', a: 2832, b: 4521, c: 6000, d: 3325 }
+        ],
+        xkey: 'y',
+        ykeys: ['a', 'b', 'c', 'd'],
+        labels: ['New', 'InProg', 'Bugs', 'Finished'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
+        //barColors: function (row, series, type) {
+        //    console.log("--> " + row.labels, series, type);
+        //    if (row.labels == "New") return "#AD1D28";
+        //    else if (row.labels == "InProg") return "#DEBB27";
+        //    else if (row.labels == "Bugs") return "#fec04c";
+        //    else if (row.labels == "Finished") return "#1AB244";
+        //}
     });
 
-    // Donut Chart
+    //// Area Chart
+    //Morris.Area({
+    //    element: 'morris-area-chart',
+    //    data: [{
+    //        period: '2010 Q1',
+    //        iphone: 2666,
+    //        ipad: null,
+    //        itouch: 2647
+    //    }, {
+    //        period: '2010 Q2',
+    //        iphone: 2778,
+    //        ipad: 2294,
+    //        itouch: 2441
+    //    }, {
+    //        period: '2010 Q3',
+    //        iphone: 4912,
+    //        ipad: 1969,
+    //        itouch: 2501
+    //    }, {
+    //        period: '2010 Q4',
+    //        iphone: 3767,
+    //        ipad: 3597,
+    //        itouch: 5689
+    //    }, {
+    //        period: '2011 Q1',
+    //        iphone: 6810,
+    //        ipad: 1914,
+    //        itouch: 2293
+    //    }, {
+    //        period: '2011 Q2',
+    //        iphone: 5670,
+    //        ipad: 4293,
+    //        itouch: 1881
+    //    }, {
+    //        period: '2011 Q3',
+    //        iphone: 4820,
+    //        ipad: 3795,
+    //        itouch: 1588
+    //    }, {
+    //        period: '2011 Q4',
+    //        iphone: 15073,
+    //        ipad: 5967,
+    //        itouch: 5175
+    //    }, {
+    //        period: '2012 Q1',
+    //        iphone: 10687,
+    //        ipad: 4460,
+    //        itouch: 2028
+    //    }, {
+    //        period: '2012 Q2',
+    //        iphone: 8432,
+    //        ipad: 5713,
+    //        itouch: 1791
+    //    }],
+    //    xkey: 'period',
+    //    ykeys: ['iphone', 'ipad', 'itouch'],
+    //    labels: ['iPhone', 'iPad', 'iPod Touch'],
+    //    pointSize: 2,
+    //    hideHover: 'auto',
+    //    resize: true
+    //});
+
+    // Donut Chart 1
     Morris.Donut({
-        element: 'morris-donut-chart',
+        element: 'morris-donut-chart1',
+        data: [{
+            label: "Download Sales",
+            value: 12
+        }, {
+            label: "In-Store Sales",
+            value: 22
+        }, {
+            label: "Mail-Order Sales",
+            value: 28
+        }],
+        resize: true
+    });
+
+    // Donut Chart 2
+    Morris.Donut({
+        element: 'morris-donut-chart2',
         data: [{
             label: "Download Sales",
             value: 12
@@ -80,6 +144,21 @@ $(function() {
         resize: true
     });
 
+    // Donut Chart 3
+    Morris.Donut({
+        element: 'morris-donut-chart3',
+        data: [{
+            label: "Download Sales",
+            value: 9
+        }, {
+            label: "In-Store Sales",
+            value: 40
+        }, {
+            label: "Mail-Order Sales",
+            value: 21
+        }],
+        resize: true
+    });
     // Line Chart
     Morris.Line({
         // ID of the element in which to draw the chart.
@@ -189,37 +268,6 @@ $(function() {
         labels: ['Visits'],
         // Disables line smoothing
         smooth: false,
-        resize: true
-    });
-
-    // Bar Chart
-    Morris.Bar({
-        element: 'morris-bar-chart',
-        data: [{
-            device: 'iPhone',
-            geekbench: 136
-        }, {
-            device: 'iPhone 3G',
-            geekbench: 137
-        }, {
-            device: 'iPhone 3GS',
-            geekbench: 275
-        }, {
-            device: 'iPhone 4',
-            geekbench: 380
-        }, {
-            device: 'iPhone 4S',
-            geekbench: 655
-        }, {
-            device: 'iPhone 5',
-            geekbench: 1571
-        }],
-        xkey: 'device',
-        ykeys: ['geekbench'],
-        labels: ['Geekbench'],
-        barRatio: 0.4,
-        xLabelAngle: 35,
-        hideHover: 'auto',
         resize: true
     });
 
