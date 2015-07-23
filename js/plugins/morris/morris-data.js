@@ -27,20 +27,22 @@ $(function () {
     Morris.Bar({
         element: 'morris-bar-workitems',
         data: [
-          { y: 'UC', a: 7991, b: 2222, c: 3333, d: 1654 },
-          { y: 'UC-AL', a: 7672, b: 3333, c: 1234, d: 4444 },
-          { y: 'IDI', a: 6676, b: 2222, c: 4232, d: 7855 },
-          { y: 'UC-AS', a: 4716, b: 3333, c: 1765, d: 1577 },
-          { y: 'AccSer', a: 4095, b: 2222, c: 3900, d: 6658 },
-          { y: 'Renew', a: 3320, b: 1876, c: 3333, d: 1244 },
-          { y: 'EOI', a: 2832, b: 4521, c: 6000, d: 3325 }
+          { y: 'Connect', a: 704, b: 1004, c: 2710, d: 1262 },
+          { y: 'Connect-AL', a: 520, b: 2925, c: 1876, d: 1157 },
+          { y: 'IDI', a: 758, b: 1136, c: 1277, d: 1338 },
+          { y: 'Connect-AS', a: 871, b: 504, c: 578, d: 984 },
+          { y: 'AccSer', a: 483, b: 736, c: 1, d: 1282 },
+          { y: 'Renew', a: 288, b: 642, c: 61, d: 977 },
+          { y: 'EOI', a: 154, b: 607, c: 313, d: 599 }
         ],
         xkey: 'y',
         ykeys: ['a', 'b', 'c', 'd'],
-        labels: ['New', 'InProg', 'Bugs', 'Finished'],
+        labels: ['New', 'InProg', 'Design', 'Finished'],
+        barColors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
+        
         //barColors: function (row, series, type) {
         //    console.log("--> " + row.labels, series, type);
         //    if (row.labels == "New") return "#AD1D28";
@@ -116,48 +118,60 @@ $(function () {
     Morris.Donut({
         element: 'morris-donut-chart1',
         data: [{
-            label: "Download Sales",
-            value: 12
+            label: "New",
+            value: 40
         }, {
-            label: "In-Store Sales",
+            label: "In Progress",
             value: 22
         }, {
-            label: "Mail-Order Sales",
+            label: "Design",
             value: 28
+        }, {
+            label: "Done",
+            value: 35
         }],
-        resize: true
+        resize: true,
+        colors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c']
     });
 
     // Donut Chart 2
     Morris.Donut({
         element: 'morris-donut-chart2',
         data: [{
-            label: "Download Sales",
+            label: "New",
             value: 12
         }, {
-            label: "In-Store Sales",
+            label: "In Progress",
             value: 30
         }, {
-            label: "Mail-Order Sales",
+            label: "Design",
             value: 20
+        }, {
+            label: "Done",
+            value: 12
         }],
-        resize: true
+        resize: true,
+        colors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c']
     });
 
     // Donut Chart 3
     Morris.Donut({
         element: 'morris-donut-chart3',
         data: [{
-            label: "Download Sales",
+            label: "New",
             value: 9
         }, {
-            label: "In-Store Sales",
+            label: "In Progress",
             value: 40
         }, {
-            label: "Mail-Order Sales",
+            label: "Design",
             value: 21
+        }, {
+            label: "Done",
+            value: 50
         }],
-        resize: true
+        resize: true,
+        colors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c']
     });
     // Line Chart
     Morris.Line({
