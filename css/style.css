@@ -1,0 +1,21 @@
+body {
+    background-color: #393F4F;
+}
+
+.navbar-black{
+    background-color: #232B38;
+    box-shadow: 4px 4px 2px #000000;
+}
+
+.navbar-brand{
+    color: #ffffff;
+}
+
+.page-header{
+    color: #ffffff;
+}
+
+.panel
+{
+    box-shadow: 4px 4px 2px #000000;
+}
