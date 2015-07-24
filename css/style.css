@@ -13,9 +13,21 @@ body {
 
 .page-header{
     color: #ffffff;
+    font-family:Arial;
 }
 
 .panel
 {
     box-shadow: 5px 5px 3px #000000;
+}
+
+.panel-default>.panel-heading {
+    background-color: #45A9B2;
+    border-color: black;
+    color: #ffffff;
+    font-family:Arial;
+}
+
+.panel-default>.panel-body {
+    background-color: whitesmoke;
 }
