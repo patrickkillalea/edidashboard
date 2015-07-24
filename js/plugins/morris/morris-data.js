@@ -42,7 +42,7 @@ $(function () {
         pointSize: 2,
         hideHover: 'auto',
         resize: true
-        
+
         //barColors: function (row, series, type) {
         //    console.log("--> " + row.labels, series, type);
         //    if (row.labels == "New") return "#AD1D28";
