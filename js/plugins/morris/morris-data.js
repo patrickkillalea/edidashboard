@@ -20,6 +20,7 @@ $(function () {
         barColors: ['#A300CC', '#337D33', '#0066CC', '#996633'],
         pointSize: 2,
         hideHover: 'auto',
+        stacked: 'true',
         resize: true
     });
 
