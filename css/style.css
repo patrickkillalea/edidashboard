@@ -31,6 +31,30 @@ body {
     background-color: whitesmoke;
 }
 
+.panel-epic .panel-heading {
+    border-color: #A300CC;
+    color: #fff;
+    background-color: #A300CC;
+}
+
+.panel-feature .panel-heading {
+    border-color: #337D33;
+    color: #fff;
+    background-color: #337D33;
+}
+
+.panel-pbi .panel-heading {
+    border-color: #0066CC;
+    color: #fff;
+    background-color: #0066CC;
+}
+
+.panel-task .panel-heading {
+    border-color: #996633;
+    color: #fff;
+    background-color: #996633;
+}
+
 .footer {
     background: #00A7D4;
     color: #fff;

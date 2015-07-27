@@ -2,30 +2,9 @@
 
 $(function () {
 
-    //Morris.Bar({
-    //    element: 'morris-bar-workitems',
-    //    data: [
-    //        { y: 'Person A', a: 10 },
-    //        { y: 'Person B', a: 15 },
-    //        { y: 'Person C', a: 12 },
-    //        { y: 'Person D', a: 20 }],
-    //    xkey: 'y',
-    //    ykeys: ['a'],
-    //    labels: ['Calls'],
-    //    hideHover: 'always',
-    //    barColors: function (row, series, type) {
-    //        console.log("--> " + row.label, series, type);
-    //        if (row.label == "Person A") return "#AD1D28";
-    //        else if (row.label == "Person B") return "#DEBB27";
-    //        else if (row.label == "Person C") return "#fec04c";
-    //        else if (row.label == "Person D") return "#1AB244";
-    //    }
-    //});
-
-
-    // Bar Chart
+    //Bar Chart
     Morris.Bar({
-        element: 'morris-bar-workitems',
+        element: 'morris-bar-workitemtype',
         data: [
           { y: 'Connect', a: 704, b: 1004, c: 2710, d: 1262 },
           { y: 'Connect-AL', a: 520, b: 2925, c: 1876, d: 1157 },
@@ -37,82 +16,35 @@ $(function () {
         ],
         xkey: 'y',
         ykeys: ['a', 'b', 'c', 'd'],
-        labels: ['New', 'InProg', 'Design', 'Finished'],
-        barColors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c'],
+        labels: ['Epic', 'Feature', 'PBI', 'Task'],
+        barColors: ['#A300CC', '#337D33', '#0066CC', '#996633'],
         pointSize: 2,
         hideHover: 'auto',
         resize: true
-
-        //barColors: function (row, series, type) {
-        //    console.log("--> " + row.labels, series, type);
-        //    if (row.labels == "New") return "#AD1D28";
-        //    else if (row.labels == "InProg") return "#DEBB27";
-        //    else if (row.labels == "Bugs") return "#fec04c";
-        //    else if (row.labels == "Finished") return "#1AB244";
-        //}
     });
 
-    //// Area Chart
-    //Morris.Area({
-    //    element: 'morris-area-chart',
-    //    data: [{
-    //        period: '2010 Q1',
-    //        iphone: 2666,
-    //        ipad: null,
-    //        itouch: 2647
-    //    }, {
-    //        period: '2010 Q2',
-    //        iphone: 2778,
-    //        ipad: 2294,
-    //        itouch: 2441
-    //    }, {
-    //        period: '2010 Q3',
-    //        iphone: 4912,
-    //        ipad: 1969,
-    //        itouch: 2501
-    //    }, {
-    //        period: '2010 Q4',
-    //        iphone: 3767,
-    //        ipad: 3597,
-    //        itouch: 5689
-    //    }, {
-    //        period: '2011 Q1',
-    //        iphone: 6810,
-    //        ipad: 1914,
-    //        itouch: 2293
-    //    }, {
-    //        period: '2011 Q2',
-    //        iphone: 5670,
-    //        ipad: 4293,
-    //        itouch: 1881
-    //    }, {
-    //        period: '2011 Q3',
-    //        iphone: 4820,
-    //        ipad: 3795,
-    //        itouch: 1588
-    //    }, {
-    //        period: '2011 Q4',
-    //        iphone: 15073,
-    //        ipad: 5967,
-    //        itouch: 5175
-    //    }, {
-    //        period: '2012 Q1',
-    //        iphone: 10687,
-    //        ipad: 4460,
-    //        itouch: 2028
-    //    }, {
-    //        period: '2012 Q2',
-    //        iphone: 8432,
-    //        ipad: 5713,
-    //        itouch: 1791
-    //    }],
-    //    xkey: 'period',
-    //    ykeys: ['iphone', 'ipad', 'itouch'],
-    //    labels: ['iPhone', 'iPad', 'iPod Touch'],
+    // Bar Chart
+    //Morris.Bar({
+    //    element: 'morris-bar-workitemstate',
+    //    data: [
+    //      { y: 'Connect', a: 704, b: 1004, c: 2710, d: 1262 },
+    //      { y: 'Connect-AL', a: 520, b: 2925, c: 1876, d: 1157 },
+    //      { y: 'IDI', a: 758, b: 1136, c: 1277, d: 1338 },
+    //      { y: 'Connect-AS', a: 871, b: 504, c: 578, d: 984 },
+    //      { y: 'AccSer', a: 483, b: 736, c: 1, d: 1282 },
+    //      { y: 'Renew', a: 288, b: 642, c: 61, d: 977 },
+    //      { y: 'EOI', a: 154, b: 607, c: 313, d: 599 }
+    //    ],
+    //    xkey: 'y',
+    //    ykeys: ['a', 'b', 'c', 'd'],
+    //    labels: ['New', 'InProg', 'Design', 'Finished'],
+    //    barColors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c'],
     //    pointSize: 2,
     //    hideHover: 'auto',
     //    resize: true
     //});
+
+
 
     // Donut Chart 1
     Morris.Donut({
@@ -131,7 +63,7 @@ $(function () {
             value: 35
         }],
         resize: true,
-        colors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c']
+        colors: ['#A300CC', '#337D33', '#0066CC', '#996633']
     });
 
     // Donut Chart 2
@@ -151,7 +83,7 @@ $(function () {
             value: 12
         }],
         resize: true,
-        colors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c']
+        colors: ['#A300CC', '#337D33', '#0066CC', '#996633']
     });
 
     // Donut Chart 3
@@ -171,7 +103,7 @@ $(function () {
             value: 50
         }],
         resize: true,
-        colors: ['#357bb5', '#edab4e', '#d6564f', '#5cb85c']
+        colors: ['#A300CC', '#337D33', '#0066CC', '#996633']
     });
     // Line Chart
     Morris.Line({
